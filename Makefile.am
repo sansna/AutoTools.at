@@ -8,7 +8,7 @@ bin_PROGRAMS = hello
 # the target part which contains neither Alphanumeric nor @ is replced
 # by unerscore'_'.
 # var, _SOURCES, _LDADD, CPPFLAGS
-hello_SOURCES = hello.c whine.c whine.h
+hello_SOURCES = src/hello.c src/whine.c src/whine.h
 # Define flags:
 # AM_CPPFLAGS, AM_CFLAGS, AM_CXXFLAGS
 AM_CFLAGS = $(MYDEPS_CFLAGS)

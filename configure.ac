@@ -1,9 +1,9 @@
 # Init autoconfig, full program name, version, email, program name, url
-AC_INIT([hello], [nosubdir], [x@example.com], [hello], [http://www.dwheeler.com/])
+AC_INIT([hello], [subdir], [x@example.com], [hello], [http://www.dwheeler.com/])
 # autoconf version should be higher than specified.
 AC_PREREQ([2.68])
 # Safety check: source file, must exist.
-AC_CONFIG_SRCDIR([hello.c])
+AC_CONFIG_SRCDIR([src/hello.c])
 # generate config header.
 AC_CONFIG_HEADERS([config.h])
 # auxiliary files be put in this folder.
@@ -12,7 +12,7 @@ AC_CONFIG_AUX_DIR([build-aux])
 # add a line: ACLOCAL_AMFLAGS = -I m4 --install
 AC_CONFIG_MACRO_DIR([m4])
 # automake commandline init.
-AM_INIT_AUTOMAKE([1.11 -Wall -Werror])
+AM_INIT_AUTOMAKE([1.11 subdir-objects -Wall -Werror])
 # let ./configure generate file named Makefile.
 AC_CONFIG_FILES([Makefile])
 # Automatic find and define C compiler.
