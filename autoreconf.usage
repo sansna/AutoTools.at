@@ -1,0 +1,10 @@
+# after creating configure.ac & Makefile.am, now we can run
+# autoreconf -i
+# to generate configure and Makefile.in, etc, but note some
+# files still needed to be created, such as README, ChangeLog..
+# Then we can build the program by ./configure && make
+# Also autoreconf generated some great capabilities such as:
+# DESTDIR="$t" make install
+# DESTDIR="$t" make uninstall
+# make distcheck   # Check beore release
+# make dist        # Creates distribution tarball.
