@@ -6,5 +6,5 @@
 # Also autoreconf generated some great capabilities such as:
 # DESTDIR="$t" make install
 # DESTDIR="$t" make uninstall
-# make distcheck   # Check beore release
+# make distcheck   # Check and release
 # make dist        # Creates distribution tarball.
